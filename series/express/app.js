@@ -1,33 +1,24 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 80;//serving static files
-app.use('/static',express.static('static'));
+const port = 80;
 
-//setting the template engine
-app.set("view engine",'pug');
+//EXPRESS related 
+app.use('/static',express.static('static'));//serving static files
 
-//setting view directory
-app.set('views',path.join(__dirname,'views'));
+//PUG related
+app.set("view engine",'pug');//setting the template engine
+app.set('views',path.join(__dirname,'views'));//setting view directory
 
-//pug demo end point
-app.get('/demo',(req,res)=>{
-    res.statusCode = 200
-    res.render('demo', { title: 'Hey armaan', message: 'Hello armaan there!' })
-})
+//endpoints
 app.get('/',(req,res)=>{
-    res.send('this is home ');
+    const con = "this is my content";
+    const params = {'title': 'i love pubg','content':con}
+    res.status(200).render('index.pug',params);
 })
 
-app.get('/about',(req,res)=>{
-    res.statusCode = 404;
-    res.send('this is about');
-})
 
-app.post('/about',(req,res)=>{
-    res.send('this is post request about');
-})
-
+//starting server
 app.listen(port,()=>{
     console.log('server starting');
 })
