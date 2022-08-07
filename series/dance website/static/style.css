@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    background-color: #d43b3b;
+    padding: 13px 14px;
+    font-family: 'Lacquer', cursive;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 13px 20px;
+    color: white;
+    font-size: 20px;
+}
+#navbar li a:hover{
+    color: black;
+}
+
+#introSection{
+    padding-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:2.7rem;
+    background-color: red;
+    height: 425px;
+    background: center / cover no-repeat url(/static/dance.jpg);
+}
+
+#introSection div.small{
+    font-size: 1.9rem;
+    padding: 5px;
+}
+
+#missionSection{
+    width: 67%;
+    height: 330px;
+    margin: auto;
+}
+
+#missionSection h2{
+    font-size: 2.7rem;
+    text-align: center;
+    padding-top:12px;
+}
+
+.card{
+    background: #fff6f6;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 15px;
+    height: 210px;
+    display: inline-block;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px;
+}
+
+#sponsorsSection{
+    background-color: #fbd6d6c7;
+    height: 300px;
+}
+
+#sponsorsSection h2{
+    text-align: center;
+    padding-top:12px;
+}
+
+#footer{
+    background-color: black;
+    height: 100px;
+}
+
