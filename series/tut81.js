@@ -1,5 +1,5 @@
 //how to insert data in mongo db
-use armaanKart
+// use armaanKart
 
 db.items.insertOne({
     name:"vivo",
