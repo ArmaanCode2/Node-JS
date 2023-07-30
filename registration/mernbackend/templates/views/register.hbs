@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="inputs">
+        <form method="POST" action="/register">
+            <input type="text" placeholder="First Name" name="firstname">
+            <input type="text" placeholder="last Name" name="lastname">
+            <input type="text" placeholder="Your email" name="email">
+            <input type="text" placeholder="Your Phone" name="phone">
+
+            <input type="radio" id="huey" name="gender" checked value="male">
+            <label for="huey">Male</label>
+
+            <input type="radio" id="dewey" name="gender" value="female">
+            <label for="dewey">Female</label>
+
+            <input type="text" placeholder="Enter Age" name="age">
+            <input type="text" placeholder="Enter Password" name="password">
+            <input type="text" placeholder="Confirm Password" name="cpassword">
+            <input type="submit">
+        </form>
+    </div>
+    {{>dialog}}
+    {{extra.name}}
+    {{extra.age}}
+</body>
+</html>

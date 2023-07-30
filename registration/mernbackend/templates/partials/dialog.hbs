@@ -1,0 +1,28 @@
+{{#if showPopup}}
+<div id="dialogBox" class="dialog-box">
+    <div class="dialog-content">
+      <div id="dialogMessage" class="dialog-message">{{message}}</div>
+      <button id="closeButton" class="close-button">&times;</button>
+    </div>
+  </div>
+  {{/if}}
+  
+  <script>
+// Function to show the dialog box with a specific message
+function showDialog() {
+  var dialogBox = document.getElementById("dialogBox");
+  var dialogMessage = document.getElementById("dialogMessage");
+
+  dialogBox.style.display = "block";
+}
+
+// Function to hide the dialog box
+function hideDialog() {
+  var dialogBox = document.getElementById("dialogBox");
+  dialogBox.style.display = "none";
+}
+
+// Close button click event
+document.getElementById("closeButton").addEventListener("click", hideDialog);
+
+</script>

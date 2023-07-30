@@ -1,0 +1,58 @@
+a{
+    margin: 10px;
+    font-size: 20px;
+}
+
+input{
+    display: block;
+    margin: 2rem 0;
+}
+
+input[type="radio"]{
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+  
+  .dialog-content {
+    position: relative;
+  }
+  
+  .dialog-message {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    line-height: 1;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #333;
+}

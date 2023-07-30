@@ -1,0 +1,16 @@
+<nav>
+    <div>
+        <a href="/register">register</a>
+        <a href="/login">login</a>
+        <a href="/">home</a>
+        {{#if req.session.user}}
+            <a href="/logout">logout</a>
+        {{/if}}
+    </div>
+</nav>
+
+{{#if extra}}
+    <div>
+        <h1>Hello {{extra.name}} your age is {{extra.age}}</h1>
+    </div>
+{{/if}}

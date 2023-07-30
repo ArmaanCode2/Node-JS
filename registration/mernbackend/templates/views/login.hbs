@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="inputs">
+        <form method="POST" action="/login">
+            <input type="text" placeholder="Your email" name="email">
+
+            <input type="text" placeholder="Enter Password" name="password">
+            <input type="text" placeholder="Confirm Password" name="cpassword">
+            <input type="submit">
+        </form>
+    </div>
+    {{>dialog}}
+    {{extra.name}}
+    {{extra.age}}
+</body>
+</html>
